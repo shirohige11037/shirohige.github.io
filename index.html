@@ -1,28 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <title>廣重伊織 ポートフォリオ</title>
-    <link href = "style.css" rel="stylesheet"/>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <body>
-    <dev class = "block" id = "profile">
-      <h1 class = "title">
-        プロフィール
-      </h1>
+<header class="header">
+  <h1 class="logo">Taro Yamada</h1>
+  <nav>
+    <ul class="nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h2>Web Engineer</h2>
+    <p>フロントエンドを中心に学習・開発しています</p>
+    <a class="github-btn" href="https://github.com/" target="_blank">
+      GitHubを見る
+    </a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      大学で情報系を専攻し、Webアプリケーション開発を学んでいます。<br>
+      設計や可読性を意識したコードを書くことを大切にしています。
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>React（学習中）</li>
+      <li>Node.js（基礎）</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </section>
+
+  <section id="works" class="section">
+    <h2>Works</h2>
+
+    <div class="work-card">
+      <h3>タスク管理アプリ</h3>
+      <p class="tech">使用技術：HTML / CSS / JavaScript</p>
       <p>
-        name:廣重伊織
+        CRUD機能を持つタスク管理アプリを個人開発しました。
+        ローカルストレージを用いてデータを永続化しています。
       </p>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+
+    <div class="work-card">
+      <h3>ポートフォリオサイト</h3>
+      <p class="tech">使用技術：HTML / CSS</p>
       <p>
-        affiliation:佐世保工業高等専門学校 電子制御工学科 4年
+        就活用に制作したポートフォリオサイトです。
+        レスポンシブ対応を行い、可読性を重視しました。
       </p>
-      <p>
-        email:<a href="mailto:shirohige1025@gmail.com">shirohige1025@gmail.com</a>
-      </p>
-      <p>
-        tel:<a href="tel:090-5081-1983">090-5081-1983</a>
-      </p>
-    </dev>
-  </body>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Taro Yamada</p>
+</footer>
+
+</body>
 </html>
