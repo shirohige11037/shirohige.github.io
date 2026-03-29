@@ -1,16 +1,98 @@
-li{
-  color:blue;
-  text-align: center;
-  animation:slide-in linear forwards;
-  animation-timeline:scroll();
-  animation-range:entry 0% cover 50%;
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes slide-in{
-  from{
-    transform:translateX(-50%);opacity:0;
-  }
-  to{
-    transform:translateX(0);opacity:1;
+/* 全体 */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background: #333;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* セクション */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* プロフィール */
+.about-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-container img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* 作品 */
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.work-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.work-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
   }
 }

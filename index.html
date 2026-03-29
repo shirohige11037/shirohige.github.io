@@ -1,28 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <title>廣重伊織 ポートフォリオ</title>
-    <link href = "style.css" rel="stylesheet"/>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>廣重伊織 ポートフォリオ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <dev class = "block" id = "profile">
-      <h1 class = "title">
-        プロフィール
-      </h1>
-      <p>
-        name:廣重伊織
-      </p>
-      <p>
-        affiliation:佐世保工業高等専門学校 電子制御工学科 4年
-      </p>
-      <p>
-        email:<a href="mailto:shirohige1025@gmail.com">shirohige1025@gmail.com</a>
-      </p>
-      <p>
-        tel:<a href="tel:090-5081-1983">090-5081-1983</a>
-      </p>
-    </dev>
-  </body>
+  <!-- ヘッダー -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#works">作品</a></li>
+        <li><a href="#contact">連絡先</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- プロフィール -->
+  <section id="about" class="section">
+    <h2>プロフィール</h2>
+    <div class="about-container">
+      <img src="profile.png" alt="プロフィール画像">
+      <div>
+        <p>名前：廣重伊織</p>
+        <p>所属：佐世保工業高等専門学校 電子制御工学科 4年</p>
+        <p>自己紹介：<br>Unity C# を用いたゲーム制作を中心に活動しています。<br>HTML/CSS/JavaScript を使用したウェブ開発も行っています。</p>
+        <p>スキル：Unity C# / HTML / CSS / JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section id="works" class="section">
+    <h2>作品</h2>
+    <div class="works-container">
+
+      <div class="work-card">
+        <img src="work1.jpg" alt="作品1">
+        <h3>作品タイトル1</h3>
+        <p>作品の説明が入ります。</p>
+      </div>
+
+      <div class="work-card">
+        <img src="work2.jpg" alt="作品2">
+        <h3>作品タイトル2</h3>
+        <p>作品の説明が入ります。</p>
+      </div>
+
+      <div class="work-card">
+        <img src="work3.jpg" alt="作品3">
+        <h3>作品タイトル3</h3>
+        <p>作品の説明が入ります。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 連絡先 -->
+  <section id="contact" class="section">
+    <h2>連絡先</h2>
+    <p>Email: <a href="mailto:shirohige1025@gmail.com">shirohige1025@gmail.com</a></p>
+    <p>Tell: <a href="tel:090-5081-1983">090-5081-1983</a></p>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 Iori Hiroshige</p>
+  </footer>
+
+</body>
 </html>
