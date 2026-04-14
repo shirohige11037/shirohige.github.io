@@ -1,105 +1,76 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>廣重伊織 ポートフォリオ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <h1 class="logo">Taro Yamada</h1>
-  <nav>
-    <ul class="nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- ヘッダー -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#works">作品</a></li>
+        <li><a href="#contact">連絡先</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-
-  <section class="hero">
-    <h2>廣重 伊織</h2>
-    <p>フロントエンドを中心に学習・開発しています</p>
-    <a class="github-btn" href="https://github.com/" target="_blank">
-      GitHubを見る
-    </a>
-  </section>
-
+  <!-- プロフィール -->
   <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      佐世保工業高等専門学校 電子制御工学科 4年<br>
-      主にUnity C#を用いたゲーム制作を行っています。<br>
-      ユーザーが楽しめることを第一に考え、UIの見やすさや操作性はもとより<br>
-      エフェクトやモーションまで力を入れて実装を行っています。
-    </p>
+    <h2>プロフィール</h2>
+    <div class="about-container">
+      <img src="profile.png" alt="プロフィール画像">
+      <div>
+        <p>名前：廣重伊織</p>
+        <p>所属：佐世保工業高等専門学校 電子制御工学科 4年</p>
+        <p>自己紹介：<br>Unity C# を用いたゲーム制作を中心に活動しています。<br>HTML/CSS/JavaScript を使用したウェブ開発も行っています。</p>
+        <p>スキル：Unity C# / HTML / CSS / JavaScript</p>
+      </div>
+    </div>
   </section>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Unity C#</li>
-      <li>Processing</li>
-      <li>HTML / CSS</li>
-      <li>JavaScript</li>
-      <li>Git / GitHub</li>
-    </ul>
-  </section>
-
+  <!-- 作品 -->
   <section id="works" class="section">
-    <h2>Works</h2>
+    <h2>作品</h2>
+    <div class="works-container">
 
-    <div class="work-card">
-      <h3>Go！GO！佐用姫！</h3>
-      <p class="tech">使用技術：Unity C#</p>
-      <p>
-        西九州に伝わる民話である佐用姫伝説をもとにした2Dの避けゲーです。<br>
-        障害物をよけることでスピードを維持し時間内に目標に追いつけばクリアです。<br>
-      </p>
-      <a href="#" target="_blank">ダウンロードリンク</a>
+      <div class="work-card">
+        <img src="work1.jpg" alt="作品1">
+        <h3>作品タイトル1</h3>
+        <p>作品の説明が入ります。</p>
+      </div>
+
+      <div class="work-card">
+        <img src="work2.jpg" alt="作品2">
+        <h3>作品タイトル2</h3>
+        <p>作品の説明が入ります。</p>
+      </div>
+
+      <div class="work-card">
+        <img src="work3.jpg" alt="作品3">
+        <h3>作品タイトル3</h3>
+        <p>作品の説明が入ります。</p>
+      </div>
+
     </div>
-
-    <div class="work-card">
-      <h3>magician</h3>
-      <p class="tech">使用技術：Unity C#</p>
-      <p>
-        TPSのシューティングアクションゲームです。<br>
-        魔法を駆使して時間内に多くの敵を倒し高いスコアを目指すというゲーム性です。<br>
-        。<br>
-      </p>
-      <a href="#" target="_blank">ダウンロードリンク</a>
-    </div>
-
-    <div class="work-card">
-      <h3>ばりぃど！</h3>
-      <p class="tech">使用技術：Unity C#</p>
-      <p>
-        FPSのシューティングアクションゲームです。<br>
-        3Dリアルタイム版ふしぎのダンジョンというコンセプトで製作しました。<br>
-        毎回自動生成されるマップを探索し、敵を倒しながらダンジョンの奥を目指していきます。<br>
-        最下層には手強いボスが待ち構えているので、それを倒すことが最終的な目標になります。<br>
-        レベルの概念があるため、道中の敵を多く倒すことがボスの撃破のカギとなります。<br>
-      </p>
-      <a href="#" target="_blank">ダウンロードリンク</a>
-    </div>
-
   </section>
 
+  <!-- 連絡先 -->
   <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: shirohige1025@gmail.com</p>
+    <h2>連絡先</h2>
+    <p>Email: <a href="mailto:shirohige1025@gmail.com">shirohige1025@gmail.com</a></p>
+    <p>Tell: <a href="tel:090-5081-1983">090-5081-1983</a></p>
   </section>
 
-</main>
-
-<footer class="footer">
-  <p>&copy;Iori Hiroshige</p>
-</footer>
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 Iori Hiroshige</p>
+  </footer>
 
 </body>
 </html>
